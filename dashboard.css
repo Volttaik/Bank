@@ -1,0 +1,189 @@
+
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #0056b3;
+    --text-color: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    font-size: 0.9em;
+}
+
+.header {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+   
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+.header img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius:50px;
+}
+
+.profile-section {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.profile-section img {
+    width: 60px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.balance-container {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 30px; /* Adjusted padding */
+    display: flex;
+    justify-content: space-between; /* Ensures items are on opposite ends */
+    align-items: center;
+    margin: 15px auto;
+    border-radius: 15px; 
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 500px;
+}
+
+.balance-details {
+    text-align: left; /* Align balance and account number to the left */
+}
+
+.actions {
+    text-align: right; /* Align "Add Money" button to the right */
+}
+.balance {
+    font-size: 1.2em; /* Increased font size */
+}
+
+.account-number {
+    font-size: 0.7em; /* Slightly increased size */
+    color: black;
+}
+
+.actions button {
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    border: none;
+    padding: 8px 12px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+.actions button:hover {
+    background-color: var(--primary-color);
+}
+
+.icons-container {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 15px auto;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+}
+
+.icons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px; /* Increased spacing between icons */
+}
+
+.icons-grid img {
+    width: 70%;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+    max-height: 70px;
+}
+
+.info-box {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 15px auto;
+    border-radius: 30px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-box img {
+    width: 30px;
+    height: 30px;
+}
+
+.recent-transactions {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 15px auto;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 350px;
+    max-height: 150px; /* Reduced height */
+    overflow-y: auto;
+}
+
+.transaction-item {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.footer {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .icons-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.footer .icons-row a {
+    margin: 0 25px; /* Add horizontal margin to increase spacing */
+}
+
+.footer img {
+    width: 30px; /* Increased size */
+    height: 30px;
+    border-radius:10px;
+}
+.footer img  {
+    width: 30px;
+    height: 30px;
+    gap:50px;
+}
+
+.user-id-section {
+    padding: 8px 0;
+    background-color: #f8f8f8;
+    width: 100%;
+    text-align: center;
+}
+
