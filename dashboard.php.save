@@ -54,14 +54,11 @@ $transactions = $stmt->fetchAll(PDO::FETCH_ASSOC);
 </head>
 <body>
     <!-- Header Section -->
-<div class="header">
-    <div class="profile-info" style="text-align: center;">
-        <!-- Profile Picture Icon -->
-        <i class="fas fa-user-circle profile-img" style="font-size: 20px; color:black;"></i>
-        <!-- Greeting with Username -->
-        <h1 style="margin-top: 10px;">Hi, <?php echo htmlspecialchars($username); ?></h1>
-    </div>
-
+    <div class="header">
+        <div class="profile-info">
+            <i class="fas fa-user-circle profile-img"></i>
+            <h1>Hi, <?php echo htmlspecialchars($username); ?></h1>
+        </div>
         <div class="header-icons">
             <i class="fas fa-headset header-icon" title="Customer Service"></i>
             <i class="fas fa-qrcode header-icon" title="Scan QR Code"></i>
@@ -107,7 +104,7 @@ $transactions = $stmt->fetchAll(PDO::FETCH_ASSOC);
         <?php else: ?>
             <p>No recent transactions.</p>
         <?php endif; ?>
-    </div>
+      </div>
   <div class="icons-container">
         <div class="icons-grid">
             <div class="icon-item">
@@ -162,21 +159,22 @@ $transactions = $stmt->fetchAll(PDO::FETCH_ASSOC);
     </div>
     <!-- Footer Section -->
     <div class="footer">
-    <div class="footer-icons">
-        <a href="profile.php">
-            <i class="fas fa-user footer-icon"></i>
-        </a>
-        <a href="settings.php">
-            <i class="fas fa-cog footer-icon"></i>
-        </a>
-        <a href="tax.php">
-            <i class="fas fa-money-bill-wave footer-icon"></i>
-        </a>
-        <a href="reward.php">
-            <i class="fas fa-gift footer-icon"></i>
-        </a>
+        <div class="footer-icons">
+            <a href="profile.php">
+                <i class="fas fa-user footer-icon"></i>
+            </a>
+            <a href="settings.php">
+                <i class="fas fa-cog footer-icon"></i>
+            </a>
+            <a href="tax.php">
+                <i class="fas fa-receipt footer-icon"></i>
+            </a>
+            <a href="reward.php">
+                <i class="fas fa-gift footer-icon"></i>
+            </a>
+        </div>
     </div>
-</div>
+
     <!-- JavaScript -->
     <script>
         const toggleBalance = document.querySelector('#toggleBalance');
@@ -216,10 +214,6 @@ $transactions = $stmt->fetchAll(PDO::FETCH_ASSOC);
           .footer-icons {
             display: flex;
             gap: 85px;
-            align-items: center;}
-           .actions{
-              colour:black;
-                  }
-              
+            align-items: center;
     </style>
 </html>
